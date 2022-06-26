@@ -34,7 +34,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
   margin-bottom: 5px;
   gap: 20px;
 }
@@ -43,42 +42,40 @@ body {
 .card {
   background-color: #da1e5d;
   border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 150px;
-  
   
 }
 .card h2 {
   color: #ffff;
-  text-align: center;
-  font-size: 25px;
+  font-size: 22px;
 }
-.card:hover {
-  background-color: #c1436d;
-}
+/*********************************** layout 1 end ***********************************************/
 
-
-
-/************************************ layout 1 end ***********************************************/
 #layout-2{
   display: none;
 }
+
+
 #layout2{
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 10px;
   margin-top: 20px;
-  background-color: darkgrey;
+
   
 }
 .card2 {
   background-color: #da1e5d;
   border-radius: 14px;
+  text-align: center;
   height: 300px;
-
+  
   
 }
 .card2 h2 {
-  text-align: center;
   color: #ffff;
   
 }
@@ -98,7 +95,6 @@ body {
   display: grid;
   grid-template-columns: auto auto;
   gap: 10px;
-  background-color: cadetblue;
   padding: 10px;
   margin-top: 20px;
   width: auto;

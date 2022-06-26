@@ -10,41 +10,7 @@ for (let i = 0; i < btns.length; i++) {
   });
 }
 
-// // button click open the layout
-// let layout1 = document.getElementById('container');
-// let layout2 = document.getElementById('layout2');
-// let layout3 = document.getElementById('layout3');
-
-
-// let showLayout1 = document.getElementById("container");
-// let showLayout2 = document.getElementById("layout2");
-// let showLayout3 = document.getElementById("layout3");
-
-// function layout1() {
-  
-//   if (showLayout1.style.display == "none") {
-//     showLayout1.style.display = "block";
-//   } else {
-//     showLayout1.style.display = "none";
-//   }
-// }
-// function layout2() {
-  
-//   if (showLayout2.style.display == "none") {
-//     showLayout2.style.display = "block";
-//   } else {
-//     showLayout2.style.display = "none";
-//   }
-// }
-// function layout3() {
-  
-//   if (showLayout3.style.display == "none") {
-//     showLayout3.style.display = "block";
-//   } else {
-//     showLayout3.style.display = "none";
-//   }
-// }
-
+// layout settings
 
 let allLayouts = ['layout-1', 'layout-2', 'layout-3'];
 let visibleId = null;
@@ -70,7 +36,3 @@ function hide(){
   }
 }
 
-
-// document.getElementById("btn1").onclick = function () {
-//   location.href = "../layout1/layout1.html";
-// };

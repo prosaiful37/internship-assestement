@@ -1,51 +1,37 @@
 body {
   font-family: "Raleway", sans-serif;
 }
-/* .section {
-  width: 850px;
-  margin: auto;
-} */
-
 
 .animated {
-  padding-top:95px;
-  margin-bottom:60px;
+  padding-top: 95px;
+  margin-bottom: 60px;
   -webkit-animation-duration: 10s;
   animation-duration: 10s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-@-webkit-keyframes fadeInDown {
+
+@keyframes fadeIn {
   0% {
-     opacity: 0;
-     -webkit-transform: translateY(-10px);
+    opacity: 0;
+    transform: translateY(-10px);
   }
   100% {
-     opacity: 1;
-     -webkit-transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@keyframes fadeInDown {
-  0% {
-     opacity: 0;
-     transform: translateY(-10px);
-  }
-  100% {
-     opacity: 1;
-     transform: translateY(0);
-  }
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
 
-.fadeInDown {
--webkit-animation-name: fadeInDown;
-animation-name: fadeInDown;
-} 
+.side1 ul {
+  list-style: none;
+}
 
-
-/* section animate end */
-
-
+/************************************* section animate end ******************************/
 
 .title {
   color: #404040;
@@ -60,9 +46,28 @@ animation-name: fadeInDown;
 }
 
 .side1 img {
-    width: 500px;
-    height: 400px;
+  width: 500px;
+  height: 400px;
 }
+
+@media (max-width: 800px) {
+  .title{
+    font-size: 20px;
+  }
+  .lifecycle{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+  .side1{
+    width: 450px;
+  }
+  .side2{
+    width: 300px;
+  }
+}
+
+/************************************** side1 one end *************************************/
 
 .side2 {
   width: 532px;
@@ -81,8 +86,48 @@ animation-name: fadeInDown;
   letter-spacing: 0.15em;
 }
 
+.define {
+  display: block;
+
+  animation: fadein;
+  animation-duration: 4s;
+}
+.plan {
+  display: block;
+
+  animation: fadein;
+  animation-duration: 7s;
+}
+.desing {
+  display: block;
+
+  animation: fadein;
+  animation-duration: 11s;
+}
+.implement {
+  display: block;
+
+  animation: fadein;
+  animation-duration: 15s;
+}
+.test {
+  display: block;
+
+  animation: fadein;
+  animation-duration: 18s;
+}
+.maintain {
+  display: block;
+
+  animation: fadein;
+  animation-duration: 21s;
+}
+
+
+/* ************************************************* side 2 end ************************/
 
 :root {
   --light-bg: #f0f0f0;
   --dark-grey: #404040;
+  --animate-duration: 3s;
 }
